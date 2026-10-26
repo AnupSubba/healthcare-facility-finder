@@ -53,3 +53,18 @@ test:
   script:
     - uv sync --locked
     - uv run pytest -q
+
+# Monthly refresh: CI/CD -> Schedules -> New schedule, with variables REFRESH_DATA=true and
+# PIPELINE_ARGS (e.g. "--states IN-DL IN-UP"). DATABASE_URL and CONTACT_EMAIL come from
+# Settings -> CI/CD -> Variables (masked + protected).
+refresh-data:
+  stage: data
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "schedule" && $REFRESH_DATA == "true"
+  timeout: 3h
+  script:
+    - uv sync --locked --no-dev
+    - uv run --no-dev python -m facility_finder.pipeline.run $PIPELINE_ARGS
+  artifacts:
+    paths: [docs/data-quality.md]
+    expire_in: 90 days
