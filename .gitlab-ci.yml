@@ -1,0 +1,49 @@
+# GitLab CI: lint and test on merge requests, main and tags; monthly data refresh on a schedule.
+# Tests never call real LLM APIs. Database tests use a throwaway PostGIS service container.
+image: ghcr.io/astral-sh/uv:python3.12-bookworm-slim   # pick a current tag if this one has moved on
+
+variables:
+  UV_CACHE_DIR: .uv-cache
+  UV_LINK_MODE: copy
+
+cache:
+  key:
+    files: [uv.lock]
+  paths: [.uv-cache]
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_PIPELINE_SOURCE == "schedule"
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_TAG
+
+stages: [check, test, data]
+
+.not-scheduled: &not-scheduled
+  rules:
+    - if: $CI_PIPELINE_SOURCE != "schedule"
+
+lint:
+  stage: check
+  <<: *not-scheduled
+  script:
+    - uv sync --locked
+    - uv run ruff check .
+    - uv run ruff format --check .
+
+
+test:
+  stage: test
+  <<: *not-scheduled
+  services:
+    - name: postgis/postgis:16-3.4      # pick a current tag if this one has moved on
+      alias: db
+  variables:
+    POSTGRES_DB: facilities_test
+    POSTGRES_USER: postgres
+    POSTGRES_PASSWORD: test
+    TEST_DATABASE_URL: postgresql+psycopg://postgres:test@db:5432/facilities_test
+  script:
+    - uv sync --locked
+    - uv run pytest -q
