@@ -1,0 +1,4 @@
+Sr_No,Hospital_Name,Hospital_Category,Hospital_Care_Type,Location_Coordinates,Address_Original_First_Line,State,District,Pincode,Telephone,Emergency_Services
+1,All India Institute Of Medical Sciences (AIIMS),Hospital,Public,"28.5671, 77.2102",Ansari Nagar,Delhi,South Delhi,110029,011-26588500,Yes
+2,Primary Health Centre Mehrauli,PHC,Public,,Mehrauli,Delhi,South Delhi,110030,,No
+3,Lifeline Pathology Lab,Diagnostic Lab,Private,"28.5355,77.3911",Sector 18,Uttar Pradesh,Gautam Buddha Nagar,201301,9876543210,

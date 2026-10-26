@@ -1,0 +1,17 @@
+[
+  {"type": "node", "id": 101, "lat": 28.5672, "lon": 77.2100,
+   "tags": {"amenity": "hospital", "name": "All India Institute of Medical Sciences", "operator:type": "government",
+            "emergency": "yes", "addr:city": "New Delhi", "addr:postcode": "110029", "phone": "+91 11 2658 8500"}},
+  {"type": "way", "id": 202, "center": {"lat": 28.5683, "lon": 77.2066},
+   "tags": {"amenity": "hospital", "name": "Safdarjung Hospital", "operator:type": "public", "emergency": "yes",
+            "addr:city": "New Delhi", "addr:postcode": "110029"}},
+  {"type": "node", "id": 303, "lat": 28.5355, "lon": 77.3910,
+   "tags": {"healthcare": "laboratory", "name": "City Diagnostic Lab", "addr:city": "Noida", "addr:postcode": "201301",
+            "phone": "0120-4567890"}},
+  {"type": "node", "id": 404, "lat": 28.6000, "lon": 77.2000,
+   "tags": {"amenity": "clinic", "name": "Green Park Family Clinic", "operator:type": "private",
+            "addr:city": "new delhi"}},
+  {"type": "node", "id": 505, "lat": 28.6100, "lon": 77.2100, "tags": {"amenity": "clinic"}},
+  {"type": "node", "id": 606, "lat": 51.5, "lon": -0.12,
+   "tags": {"amenity": "hospital", "name": "Wrongly Placed Hospital"}}
+]
