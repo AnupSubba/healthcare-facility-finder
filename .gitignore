@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.uv-cache/
+*.egg-info/
+dist/
+build/
+
+# Secrets - never commit
+.env
+.streamlit/secrets.toml
+ui/.streamlit/secrets.toml
+
+# Downloaded and intermediate data (rebuilt by the pipeline)
+data/raw/
+data/interim/
+
+# Editors and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
