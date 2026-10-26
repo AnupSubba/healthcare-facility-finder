@@ -5,6 +5,14 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+## [0.3.0] - 2026-10-26
+### Added
+- MCP server with a `find_facilities` tool (MCP Python SDK 2.x).
+- Streamlit UI in English and Hindi: emergency banner, results list and map, call and directions links,
+  "Report incorrect info", friendly errors; UI smoke tests.
+- Evaluation set of 50 questions, LangSmith evaluation script, and a CI test that every emergency is caught by code.
+- `requirements.txt` for the API and `ui/requirements.txt` for the UI; monthly data refresh as a GitLab scheduled pipeline.
+
 ## [0.2.0] - 2026-10-26
 ### Added
 - PostGIS search with bound parameters: type, ownership, emergency, city, pincode, name and distance filters.
