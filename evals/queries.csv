@@ -1,0 +1,51 @@
+question,intent,facility_type,city,pincode,ownership,emergency_only
+government hospital with emergency in Lucknow,find,hospital,Lucknow,,government,true
+lab near 110017,find,lab,,110017,,false
+private clinic in Indiranagar Bangalore,find,clinic,Bengaluru,,private,false
+hospital near me,find,hospital,,,,false
+blood test lab in Pune,find,lab,Pune,,,false
+government hospitals in Jaipur,find,hospital,Jaipur,,government,false
+24x7 emergency hospital in Mumbai,find,hospital,Mumbai,,,true
+clinic near 560038,find,clinic,,560038,,false
+diagnostic centre in Kolkata,find,lab,Kolkata,,,false
+private hospital in Chennai,find,hospital,Chennai,,private,false
+find a pathology lab in Hyderabad,find,lab,Hyderabad,,,false
+hospitals in 201301,find,hospital,,201301,,false
+government clinic in Patna,find,clinic,Patna,,government,false
+nearest hospital,find,hospital,,,,false
+x-ray centre in Ahmedabad,find,lab,Ahmedabad,,,false
+hospital with casualty ward in Gurgaon,find,hospital,Gurugram,,,true
+clinics in Noida sector 18,find,clinic,Noida,,,false
+Is there a government hospital in Varanasi?,find,hospital,Varanasi,,government,false
+lab for thyroid test near 400001,find,lab,,400001,,false
+hospital in Bhopal,find,hospital,Bhopal,,,false
+Lucknow mein sarkari aspatal,find,hospital,Lucknow,,government,false
+Pune mein lab kahan hai,find,lab,Pune,,,false
+पटना में सरकारी अस्पताल,find,hospital,Patna,,government,false
+mere paas clinic,find,clinic,,,,false
+Jaipur mein private hospital batao,find,hospital,Jaipur,,private,false
+दिल्ली में खून की जांच के लिए लैब,find,lab,Delhi,,,false
+110092 ke paas aspatal,find,hospital,,110092,,false
+Kanpur mein emergency wala sarkari hospital,find,hospital,Kanpur,,government,true
+इंदौर में क्लिनिक,find,clinic,Indore,,,false
+Bhopal mein sabse paas ka hospital,find,hospital,Bhopal,,,false
+chest pain which hospital in Jaipur,emergency,hospital,Jaipur,,,true
+accident ho gaya,emergency,hospital,,,,true
+someone is unconscious,emergency,hospital,,,,true
+my mother can't breathe,emergency,hospital,,,,true
+सीने में दर्द हो रहा है,emergency,hospital,,,,true
+behosh ho gaye hain jaldi batao,emergency,hospital,,,,true
+snake bite near 845401,emergency,hospital,,845401,,true
+heart attack in Lucknow,emergency,hospital,Lucknow,,,true
+What is NABH?,explain,,,,,false
+What does NABL accreditation mean?,explain,,,,,false
+PM-JAY kya hai,explain,,,,,false
+What is CGHS?,explain,,,,,false
+difference between clinic and hospital,explain,,,,,false
+What is 108?,explain,,,,,false
+What medicine should I take for fever?,out_of_scope,,,,,false
+Is my sugar level of 180 normal?,out_of_scope,,,,,false
+how to lose weight fast,out_of_scope,,,,,false
+बुखार में कौन सी दवा लें,out_of_scope,,,,,false
+can you read my blood report,out_of_scope,,,,,false
+who will win the cricket match,out_of_scope,,,,,false
