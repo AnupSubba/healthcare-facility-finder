@@ -5,6 +5,14 @@ All notable changes to this project are documented here. The format is based on
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-10-26
+### Added
+- PostGIS search with bound parameters: type, ownership, emergency, city, pincode, name and distance filters.
+- LangGraph agent: emergency check in code, LLM filter extraction (Groq, Gemini fallback), routing to search,
+  ask-for-location, explain, decline and fallback; template answers in English and Hindi.
+- Glossary: 12 knowledge cards, ingestion script and RAG explanations.
+- FastAPI service with API key, rate limits and health check.
+
 ## [0.1.0] - 2026-10-26
 ### Added
 - Project structure, pre-commit hooks, GitLab CI with a PostGIS service, local database with Docker Compose.
