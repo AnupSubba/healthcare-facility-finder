@@ -2,7 +2,7 @@
 
 **Find hospitals, clinics and labs across India in plain English or Hindi. Free, no sign-up.**
 
-Live demo: _add your link after deployment_
+Live demo: https://healthcare-facility-finder.streamlit.app/
 
 > 🚨 In an emergency, call **112** (all emergencies) or **108** (ambulance).
 > This app gives information only, not medical advice.
