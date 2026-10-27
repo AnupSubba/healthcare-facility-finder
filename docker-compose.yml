@@ -1,7 +1,7 @@
 # Local PostgreSQL + PostGIS for development and tests:  docker compose up -d db
 services:
   db:
-    image: postgis/postgis:16-3.4   # pick a current tag if this one has moved on
+    image: postgis/postgis:16-3.4   #pick a current tag if this one has moved on
     environment:
       POSTGRES_PASSWORD: dev
       POSTGRES_DB: facilities
