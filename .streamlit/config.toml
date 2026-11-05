@@ -1,0 +1,20 @@
+# UI theme for ui/app.py. Streamlit reads this from the directory you run `streamlit run` in
+# (the repo root locally and on Streamlit Community Cloud).
+
+[theme]
+base = "light"
+primaryColor = "#0F766E"            # calm teal for buttons, focus rings, links
+backgroundColor = "#F7FAF9"         # soft off-white instead of pure white
+secondaryBackgroundColor = "#E6F2EF" # inputs, popovers, sidebar
+textColor = "#1F2A2E"
+linkColor = "#0F766E"
+borderColor = "#D3E3DF"
+showWidgetBorder = true
+baseRadius = "0.75rem"
+buttonRadius = "full"
+font = "Nunito Sans:https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+headingFont = "Nunito Sans"
+headingFontWeights = [700, 700, 600, 600, 600, 600]
+
+[theme.sidebar]
+backgroundColor = "#E6F2EF"
